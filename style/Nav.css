@@ -1,0 +1,40 @@
+@import url(Function.css);
+@import url(Header.css);
+nav> .navbar{
+    width: 100%;
+    padding:10px 100px;
+    background-color: rgb(227, 67, 67);
+    
+}
+.navbar> ul{
+    display: flex;
+    list-style-type: none; 
+    
+}
+ul> .manu{
+    
+    margin-left: 20px; 
+    font-family: 'Battambang', Arial, Helvetica, sans-serif;
+
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.75;
+    transition: 0.3s;
+}
+.manu:hover,.Mhome:hover{
+    opacity: 1;
+}
+.manu>a{
+    color: rgb(255, 255, 255);  
+    text-decoration: none;
+    
+}
+
+.Mhome>a{
+    color: rgb(255, 255, 255); 
+    padding: 10px 15px 25px; 
+    margin-left:285px ;
+    text-decoration: none;
+    background-color: rgb(247, 32, 32);
+    
+}

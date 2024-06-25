@@ -1,0 +1,11 @@
+@import url(Function.css);
+header{
+    width: 100%;
+    padding: 20px 10px;
+    background-color: rgb(14, 13, 13);
+    color: white;
+}
+header>a> img{
+    width: 82px;
+    margin-left: 370px;
+}
