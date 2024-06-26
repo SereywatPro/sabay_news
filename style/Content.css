@@ -3,109 +3,264 @@
 @import url(Nav.css);
 body> .Maincontent{
     width:100%;
-    height: 615px;
+    height: 70vh;
     background-color: rgba(0, 0, 0, 0);
     display: flex;
     justify-content: center;
     
 }
-.Maincontent> .Maincontent-block{
+.Maincontent> .Main-content1{
     width: 65%;
-    height:600px;
-    background-color: rgb(0, 255, 255);
+    height:80%;
+    background-color: rgba(0, 255, 255, 0);
     display: flex;
+    justify-content: center;
     margin-top: 15px;
     font-family: 'Battambang', Arial, Helvetica, sans-serif;
     
 }
-.Maincontent-block> .top-block{
-   width: 70%;
-   height: 1500px; 
-   background-color: rgb(132, 2, 253);
-   
+.Main-content1> .Content{
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-between;
 }
-.top-block> .block-row{
-    width: 50%;
-    height: 300px;
-    background-color: rgb(0, 255, 55);
-    position: relative;
-
-}
-.block-row >a> h4{
-    width: 100px;
-    padding: 2px 4px;
-    position: absolute;
-    background-color: blue;
-    top: 10px;
-    left: 0;
-    color: white;
-    z-index: 2;
-    clip-path:polygon(0 0, 80% 0%, 100% 100% ,0% 100%);
-    text-align: center;
-}
-.block-row>a>.Mcaption{
-    width: 100%;
-    height: 300px;
-    position: absolute;
-    top: 0px;
-    z-index: 1;
-    background:linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4) 
-    )
+.Content> .ContentLeft{
+    width: 66%;
+    height: 100%;
+    background-color:rgba(255, 0, 0, 0);
+    cursor: pointer;
     
 }
-.block-row:hover> a> .Mcaption{
-    background:linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.8) 
-    )
+.ContentLeft> .ContentLeft-top{
+    width:100%;
+    height:50%;
+    background-color:rgba(0, 0, 255, 0);
+    display: flex;
+    justify-content: space-between;
+    
+   
 }
-.block-row> a> .blockTitle{
-    width: 100%;
-    padding: 89px 0px;
-    background-color:rgba(255, 0, 0, 0);   
+.ContentLeft-top> .ContentLeft-top-left{
+    width:59%;
+    height:100%;
+    background-color:rgb(255, 81, 0);
+    position: relative;
+    overflow:hidden;
+    margin-left: 40px;
+   
+    
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+        
+    ),
+    url('https://nt.global.ssl.fastly.net/binaries/content/gallery/website/national/library/our-cause/on-the-shore-borrowdale-and-derwent-water-1518851.jpg');
+    
+    background-position: center;
+    background-size: cover;
+}
+
+.ContentLeft-top-left:hover{
+    /* transition: all 0.3s linear; */
+    
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,1)
+    ),
+    url('https://nt.global.ssl.fastly.net/binaries/content/gallery/website/national/library/our-cause/on-the-shore-borrowdale-and-derwent-water-1518851.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+.ContentLeft-top-left> .Title{
+    width: 110px;
+    padding: 6px 10px;
+    color: white;
+    background-color: rgb(0, 255, 0);
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+    clip-path: polygon(0 0, 81% 0, 100% 100%, 0% 100%);
+}
+.ContentLeft-top-left> .caption{
+    width:100%;
+    height:60%;
+    background-color: rgba(230, 217, 217, 0);
+    position: relative;
     position:absolute;
-    bottom: 59px;
-    /* z-index: 1; */
+    bottom:17%;
+    overflow: hidden;
+    
+    
+}
+.caption> .InnerCaption{
+    width:100%;
+    height: 100%;
+    background-color: rgba(66, 65, 65, 0);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: -50px;
+    transition: 0.5s all;
+    padding: 20px 15px;
+    
+}
+.InnerCaption> p{
+    padding-top: 10px;
+    /* background-color: darkmagenta;   */
+    font-size: 14px;
+    color: gainsboro;
+ }
+.InnerCaption>h3{
+    margin-top: 4px;
+    
+}
+.ContentLeft-top-left:hover> .caption> .InnerCaption{
+    bottom: 0px;
+}
+.ContentLeft-top-left:hover> .caption> .InnerCaption> h3{
+    /* background-color: darkmagenta;  */
+    color: red;
+ }
+
+.ContentLeft-top-left> .time{
+    width:100%;
+    height:17%;
+    background-color:rgba(5, 6, 6, 0);
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    padding: 10px 12px;
+    
+}
+.ContentLeft-top> .ContentLeft-top-Right{
+    width:41%;
+    height:100%;
+    background-color:lightcoral;
+    position: relative;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+        
+        ),
+        url('https://cdn.sabay.com/cdn/media.sabay.com/media/Samphy-2024/June(4)/week-(46)/6675207fae600_1718952060_medium.jpg')
+    ;
+    background-position: center;
+    background-size:cover;
+    
+}
+.ContentLeft-top-Right:hover{
+    /* transition: all 0.3s linear; */
+    
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,1)
+    ),
+    url('https://cdn.sabay.com/cdn/media.sabay.com/media/Samphy-2024/June(4)/week-(46)/6675207fae600_1718952060_medium.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+.ContentLeft-top-Right> .Title{
+    width: 130px;
+    padding: 9px 10px;
+    background-color: rgb(30, 127, 225);
+    color: white;
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+    clip-path: polygon(0 0, 81% 0, 100% 100%, 0% 100%);
+    
+}
+.ContentLeft-top-Right> .caption{
+    width:100%;
+    padding: 80px 0px;
+    /* padding-top: 10px; */
+    background-color: rgba(133, 2, 255, 0);
+    position: relative;
+    position: absolute;
+    bottom: 17%;
     overflow: hidden;
     
 }
-.blockTitle> .caption{
-    width:100%;
+.caption> .Innercaption{
+    width: 100%;
     height: 100%;
-    padding: 10px 10px;
-    background-color:rgba(52, 61, 51, 0.04);
-    position:absolute;
-    bottom: -70px;
+    background-color: rgba(0, 0, 255, 0.02);
+    position: relative;
+    position: absolute;
+    bottom: -25px;
     transition: 0.5s;
-    color: white;
-    z-index: 2;
+    
+      
 }
-.block-row:hover>a> .blockTitle>.caption{
+
+.ContentLeft-top-Right:hover>.caption> .Innercaption{
     bottom: 0;
 }
-.block-row:hover> a .blockTitle .caption h3{
+.ContentLeft-top-Right:hover> .caption> .Innercaption> h3{
+    /* background-color: darkmagenta;  */
     color: red;
-}
-.block-row >a>.time{
-    width: 100%;
-    padding:15px 10px;
-    background-color: rgba(255, 0, 221, 0);
-    position:absolute;
+ }
+.ContentLeft-top-Right> .time{
+    width:100%;
+    height: 17%;
+    background-color: rgba(128, 255, 0, 0);
+    position: absolute;
     bottom: 0px;
+    padding-left: 10px;
     color: aliceblue;
-    z-index: 2;
+    padding-top: 10px;
+}
+.Innercaption> h3{
+    padding: 5px 0px;
+    padding-left: 5px;
+    color: aliceblue;
+    background-color: rgba(0, 255, 255, 0);
+    font-size: 18px;
+    
     
 }
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-position:center;
+.Innercaption> p{
+    color: gainsboro;
+    padding: 5px 10px;
+    font-size: 13px;
+    
+    
+    background-color: rgba(220, 20, 20, 0);
     
 }
+/* .ContentLeft> .ContentLeft-bottom{
+    width:100%;
+    height: 49%;
+    background-color: aqua;
+    margin-top: 7px;
+} */
+.Content> .ContentRight{
+    width:33.3%;
+    height:100%;
+    background-color:rgba(137, 43, 226, 0.002);
+}
+.ContentRight>.ContentRight-top{
+    width:85%;
+    height:50%;
+    background-color:darkgoldenrod;
+    
+}
+.ContentRight> .ContentRight-bottom{
+    width:85%;
+    height:49%;
+    background-color:rgb(38, 38, 38);
+    margin-top: 7px;
+    
+}
+
