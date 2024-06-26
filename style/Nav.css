@@ -1,10 +1,12 @@
 @import url(Function.css);
 @import url(Header.css);
-nav> .navbar{
+.navbar{
     width: 100%;
     padding:10px 100px;
-    background-color: rgb(227, 67, 67);
-    
+    background-color: rgb(245, 8, 8);
+    position:sticky;
+    top: 0;
+    z-index: 100;
 }
 .navbar> ul{
     display: flex;
@@ -36,5 +38,6 @@ ul> .manu{
     margin-left:285px ;
     text-decoration: none;
     background-color: rgb(247, 32, 32);
+   
     
 }
