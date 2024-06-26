@@ -3,19 +3,109 @@
 @import url(Nav.css);
 body> .Maincontent{
     width:100%;
-    height: 70vh;
+    height: 615px;
     background-color: rgba(0, 0, 0, 0);
     display: flex;
     justify-content: center;
     
 }
-.Maincontent> .Main-content1{
+.Maincontent> .Maincontent-block{
     width: 65%;
-    height:80%;
+    height:600px;
     background-color: rgb(0, 255, 255);
     display: flex;
-    justify-content: center;
     margin-top: 15px;
     font-family: 'Battambang', Arial, Helvetica, sans-serif;
+    
+}
+.Maincontent-block> .top-block{
+   width: 70%;
+   height: 1500px; 
+   background-color: rgb(132, 2, 253);
+   
+}
+.top-block> .block-row{
+    width: 50%;
+    height: 300px;
+    background-color: rgb(0, 255, 55);
+    position: relative;
+
+}
+.block-row >a> h4{
+    width: 100px;
+    padding: 2px 4px;
+    position: absolute;
+    background-color: blue;
+    top: 10px;
+    left: 0;
+    color: white;
+    z-index: 2;
+    clip-path:polygon(0 0, 80% 0%, 100% 100% ,0% 100%);
+    text-align: center;
+}
+.block-row>a>.Mcaption{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    background:linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4) 
+    )
+    
+}
+.block-row:hover> a> .Mcaption{
+    background:linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.8) 
+    )
+}
+.block-row> a> .blockTitle{
+    width: 100%;
+    padding: 89px 0px;
+    background-color:rgba(255, 0, 0, 0);   
+    position:absolute;
+    bottom: 59px;
+    /* z-index: 1; */
+    overflow: hidden;
+    
+}
+.blockTitle> .caption{
+    width:100%;
+    height: 100%;
+    padding: 10px 10px;
+    background-color:rgba(52, 61, 51, 0.04);
+    position:absolute;
+    bottom: -70px;
+    transition: 0.5s;
+    color: white;
+    z-index: 2;
+}
+.block-row:hover>a> .blockTitle>.caption{
+    bottom: 0;
+}
+.block-row:hover> a .blockTitle .caption h3{
+    color: red;
+}
+.block-row >a>.time{
+    width: 100%;
+    padding:15px 10px;
+    background-color: rgba(255, 0, 221, 0);
+    position:absolute;
+    bottom: 0px;
+    color: aliceblue;
+    z-index: 2;
+    
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position:center;
     
 }
