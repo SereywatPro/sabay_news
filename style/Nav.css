@@ -3,7 +3,7 @@
 .navbar{
     width: 100%;
     padding:10px 100px;
-    background-color: rgb(245, 8, 8);
+    background-color: #fa1939;
     position:sticky;
     top: 0;
     z-index: 100;
@@ -15,7 +15,7 @@
 }
 ul> .manu{
     
-    margin-left: 20px; 
+    margin-left: 30px; 
     font-family: 'Battambang', Arial, Helvetica, sans-serif;
 
     text-align: center;
@@ -37,7 +37,7 @@ ul> .manu{
     padding: 10px 15px 25px; 
     margin-left:285px ;
     text-decoration: none;
-    background-color: rgb(247, 32, 32);
+    background-color: #9E0910;;
    
     
 }
