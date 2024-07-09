@@ -2,11 +2,11 @@
 @import url(Header.css);
 @import url(Nav.css);
 body> .Maincontent{
-    width:64%;
+    width:61%;
     height: 3600px;
     background-color: rgba(255, 0, 128, 0);
     /* display: flex; */
-    margin-left: 385px;
+    margin-left: 375px;
     
 }
 .Maincontent> .Maincontent-block{
@@ -20,7 +20,7 @@ body> .Maincontent{
     
 }
 .Maincontent-block> .top-block{
-   width: 70%;
+   width: 70.2%;
    height: 600px; 
    background-color: rgb(132, 2, 253);
    display: grid;
@@ -38,15 +38,15 @@ body> .Maincontent{
 
 }
 .block-row >a> h4{
-    width: 100px;
-    padding: 2px 4px;
+    width: 90px;
+    padding: 2px 3px;
     position: absolute;
-    background-color: blue;
+    background-color: rgb(0, 0, 255);
     top: 10px;
     left: 0;
     color: white;
     z-index: 2;
-    clip-path:polygon(0 0, 85% 0%, 100% 100% ,0% 100%);
+    clip-path:polygon(0 0, 86% 0%, 100% 100% ,0% 100%);
     text-align: center;
 }
 .block-row>a>.Mcaption{
@@ -109,9 +109,11 @@ body> .Maincontent{
     
 }
 .Maincontent-block> .bannerBlock{
-    width: 29.4%;
+    width: 29%;
     height: 600px;
     background-color: rgba(165, 42, 42, 0);
+    
+    
 }
 .bannerBlock> .bannertop{
     width:100%;
@@ -149,14 +151,15 @@ img{
     background-color:#fa1939;
 } */
 .video-content> .category-video{
-    width:100px;
+    width:93px;
     background-color: #fa1939;
     color: white;
-    padding: 10px 15px 10px;
+    padding: 7px 20px;
     position: absolute;
     text-decoration: none;
-    top: -49px;
-    clip-path:polygon(0 0, 85% 0%, 100% 100%, 0% 100% );
+    top: -44px;
+    clip-path:polygon(0 0, 86% 0%, 100% 100%, 0% 100% );
+    font-size: large;
 }
 .video-content > .Main-video-detail{
     width:100%;
@@ -197,7 +200,7 @@ img{
 .box-row> .caption{
     width:100%;
     height: 35%;
-    /* background-color: rgba(175, 40, 40, 0.496); */
+    background-color: rgba(175, 40, 40, 0);
     padding: 10px 0px;
     padding-right: 10px;
     overflow: hidden;
@@ -211,7 +214,7 @@ img{
 .body-video-detail> .video-detail-bottom{
     width:70%;
     height: 60%;
-    /* background-color: darkgoldenrod; */
+    background-color: rgba(184, 135, 11, 0);
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-row-gap: 5px;
@@ -221,7 +224,7 @@ img{
 .video-detail-bottom> .box-row-bottom{
     width: 180px;
     height: 200px;
-    /* background-color: rgb(105, 200, 255); */
+    background-color: rgba(105, 200, 255, 0);
     
 }
 .box-row-bottom> .image-bottom{
@@ -257,20 +260,21 @@ img{
    
 }
 .content-1-fun> .category-fun{
-    width: 100px;
-    padding: 10px;
+    width: 110px;
+    padding: 7px 20px;
     background-color: rgb(255, 0, 98);
     position: absolute;
-    top: -49px;
-    clip-path: polygon(0 0, 85% 0%, 100% 100%, 0% 100%);
+    top: -44px;
+    clip-path: polygon(0 0, 86% 0%, 100% 100%, 0% 100%);
     color: white;
+    font-size: large;
 }
 .content-1-fun> .box-detail-fun{
     width: 100%;
     height: 100%;
     border-top: 3px solid rgb(255, 0, 98);
     /* background-color: rgb(255, 0, 255); */
-    padding: 25px 35px 0px;
+    padding: 20px 35px 0px;
 }
 .box-detail-fun> .inner-box-detail-fun{
     width: 100%;
@@ -281,13 +285,15 @@ img{
 .inner-box-detail-fun> .inner-box-left{
     width:40%;
     height: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 .inner-box-left> .Image-box-left{
-    width: 100%;
-    height: 65%;
+    width: 350px;
+    height: 62%;
     background-color: #000000;
-    padding: 5px 1px;
+    padding: 2px 0px;
+   
 }
 
 .inner-box-left>.text-left{
@@ -295,14 +301,16 @@ img{
     height: 35%;
     background-color: deepskyblue;
     color: white;
-    padding: 10px;
+    padding: 5px;
     font-weight: bold;
     font-size: 20px;
+    overflow: hidden;
 }
-.inner-box-left:hover> .Image-box-left{
-    transform: scale(0.99);
+.inner-box-left:hover> .Image-box-left>img{
+    transform: scale(0.98);
     transition: 0.1s;
 }
+
 /* end inner box left */
 
 
@@ -311,36 +319,36 @@ img{
     height: 100%;
     background-color: rgba(34, 193, 90, 0);
  }
- .inner-box-right img{
-    object-fit: inherit;
-    object-position: 1px 1px 1px;
- }
+ /* .inner-box-right img{
+    object-fit: cover; 
+     object-position: 1px 1px 1px; 
+ } */
  .inner-box-right>.top-right{
     width:100%;
     height: 100%;
-    /* background-color: rgba(102, 51, 153, 0.9); */
+    background-color: rgba(102, 51, 153, 0);
     display: grid;
     grid-template-columns:auto auto auto auto;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
     padding: 0px 10px 0px;
     margin-left: 20px;
-    margin-top: -5px;
+    
  }
  .top-right> .box-top-right{
-    width: 195px;
-    height: 155px;
-    background-color: rgba(4, 255, 255, 0);
-    padding: 5px 0px;
+    width: 170px;
+    height: 150px;
+    background-color: rgba(0, 255, 255, 0);
+    cursor: pointer;
  }
  .box-top-right> .Image-top-right{
     width: 100%;
-    height: 70%;
+    height: 67%;
     background-color: rgb(0, 0, 0);
-    padding: 1px 0px;
+    padding: 2px 0px;
  } 
- .box-top-right:hover> .Image-top-right{
-    transform: scale(0.99);
+ .box-top-right:hover> .Image-top-right> img{
+    transform: scale(0.98);
     transition: 0.1s;
  }
 
@@ -350,17 +358,57 @@ img{
     background-color:rgba(0, 128, 128, 0) ;
     font-size: 13px;
     overflow: hidden;
-    padding: 0px 7px;
+    padding: 0px 4px;
  }
+ /* extra code content-1-fun */
  .content-1-fun> .sport{
-    background-color: chartreuse;
+    background-color:coral;
+    font-weight: bolder;  
  }
  .content-1-fun> .new{
-   border-top: 2px solid chartreuse;
+   border-top: 3px solid coral;
  }
 
+.content-1-fun> .technology{
+    background-color: gold;
+    font-weight:bolder;
+    width: 170px;
+}
+.content-1-fun> .techno-box{
+    border-top: 3px solid gold;
+}
+.content-1-fun> .lifeNsocity{
+    background-color:rgb(0, 155, 23);
+    font-weight: bolder;
+    width: 140px;
+}
+.content-1-fun> .lNS{
+    border-top: 3px solid rgb(0, 155, 23);
+}
+.content-1-fun> .cate-fun >a{
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
 
+/* extra code content video */
 
-
-
-
+.inner-box-left>.img-box-left-sport{
+    width: 350px;
+    height: 55%;
+    padding: 2px 0px;
+    
+}
+.inner-box-left> .txt-left-sport{
+    font-size: 21px;
+    height: 38%;
+    padding: 10px 15px;
+}
+.inner-box-right> .top-right-2{
+    /* background-color: cadetblue; */
+    margin-left: 20px;
+}
+.box-top-right-sport> .img-box-right-sport{
+    width: 100%;
+    
+}
